@@ -18,4 +18,7 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
+  build: {
+    assetsDir: 'assets' // Forces Vite to use 'assets' instead of '_assets'
+  }
 })
